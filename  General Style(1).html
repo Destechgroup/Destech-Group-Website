@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>notepad</title>
+</head>
+<style type="text/css">
+ol,ul{
+display:block;
+list-style-type:none;
+margin:3px;
+}
+</style><body>
+<div>/* General Styles */<br>
+body {<br>
+&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;&nbsp; margin: 0;<br>
+&nbsp;&nbsp;&nbsp; padding: 0;<br>
+&nbsp;&nbsp;&nbsp; box-sizing: border-box;<br>
+}<br>
+<br>
+header {<br>
+&nbsp;&nbsp;&nbsp; background: #333;<br>
+&nbsp;&nbsp;&nbsp; color: #fff;<br>
+&nbsp;&nbsp;&nbsp; padding: 1rem;<br>
+&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; justify-content: space-between;<br>
+&nbsp;&nbsp;&nbsp; align-items: center;<br>
+}<br>
+<br>
+.logo {<br>
+&nbsp;&nbsp;&nbsp; font-size: 1.5rem;<br>
+&nbsp;&nbsp;&nbsp; font-weight: bold;<br>
+}<br>
+<br>
+.nav-links {<br>
+&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; gap: 1rem;<br>
+}<br>
+<br>
+.nav-links a {<br>
+&nbsp;&nbsp;&nbsp; color: #fff;<br>
+&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+}<br>
+<br>
+.menu-toggle {<br>
+&nbsp;&nbsp;&nbsp; display: none;<br>
+&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp; cursor: pointer;<br>
+}<br>
+<br>
+.menu-toggle .bar {<br>
+&nbsp;&nbsp;&nbsp; width: 25px;<br>
+&nbsp;&nbsp;&nbsp; height: 3px;<br>
+&nbsp;&nbsp;&nbsp; background: #fff;<br>
+&nbsp;&nbsp;&nbsp; margin: 4px 0;<br>
+}<br>
+<br>
+.hero {<br>
+&nbsp;&nbsp;&nbsp; background: url('hero-bg.jpg') no-repeat center center/cover;<br>
+&nbsp;&nbsp;&nbsp; color: #fff;<br>
+&nbsp;&nbsp;&nbsp; padding: 5rem 2rem;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.hero-content {<br>
+&nbsp;&nbsp;&nbsp; max-width: 800px;<br>
+&nbsp;&nbsp;&nbsp; margin: 0 auto;<br>
+}<br>
+<br>
+.cta-button {<br>
+&nbsp;&nbsp;&nbsp; background: #ff5733;<br>
+&nbsp;&nbsp;&nbsp; color: #fff;<br>
+&nbsp;&nbsp;&nbsp; padding: 0.75rem 1.5rem;<br>
+&nbsp;&nbsp;&nbsp; text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 5px;<br>
+&nbsp;&nbsp;&nbsp; display: inline-block;<br>
+&nbsp;&nbsp;&nbsp; margin-top: 1rem;<br>
+}<br>
+<br>
+.services {<br>
+&nbsp;&nbsp;&nbsp; padding: 2rem;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.service-grid {<br>
+&nbsp;&nbsp;&nbsp; display: grid;<br>
+&nbsp;&nbsp;&nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));<br>
+&nbsp;&nbsp;&nbsp; gap: 1rem;<br>
+&nbsp;&nbsp;&nbsp; margin-top: 1rem;<br>
+}<br>
+<br>
+.service-card {<br>
+&nbsp;&nbsp;&nbsp; background: #f4f4f4;<br>
+&nbsp;&nbsp;&nbsp; padding: 1rem;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 5px;<br>
+&nbsp;&nbsp;&nbsp; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);<br>
+}<br>
+<br>
+.about, .contact {<br>
+&nbsp;&nbsp;&nbsp; padding: 2rem;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+}<br>
+<br>
+.contact form {<br>
+&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp; gap: 1rem;<br>
+&nbsp;&nbsp;&nbsp; max-width: 500px;<br>
+&nbsp;&nbsp;&nbsp; margin: 0 auto;<br>
+}<br>
+<br>
+.contact input, .contact textarea {<br>
+&nbsp;&nbsp;&nbsp; padding: 0.75rem;<br>
+&nbsp;&nbsp;&nbsp; border: 1px solid #ccc;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 5px;<br>
+}<br>
+<br>
+.contact button {<br>
+&nbsp;&nbsp;&nbsp; background: #333;<br>
+&nbsp;&nbsp;&nbsp; color: #fff;<br>
+&nbsp;&nbsp;&nbsp; padding: 0.75rem;<br>
+&nbsp;&nbsp;&nbsp; border: none;<br>
+&nbsp;&nbsp;&nbsp; border-radius: 5px;<br>
+&nbsp;&nbsp;&nbsp; cursor: pointer;<br>
+}<br>
+<br>
+footer {<br>
+&nbsp;&nbsp;&nbsp; background: #333;<br>
+&nbsp;&nbsp;&nbsp; color: #fff;<br>
+&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp; padding: 1rem;<br>
+}<br>
+<br>
+/* Responsive Styles */<br>
+@media (max-width: 768px) {<br>
+&nbsp;&nbsp;&nbsp; .nav-links {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width: 100%;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .nav-links.active {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+<br>
+&nbsp;&nbsp;&nbsp; .menu-toggle {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: flex;<br>
+&nbsp;&nbsp;&nbsp; }<br>
+}</div>
+</body>
+</html>
